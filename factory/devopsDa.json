@@ -1,0 +1,9 @@
+{
+	"name": "devopsDa",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a57d603f-2265-44c2-ab2a-cd311c441c25",
+		"tenantId": "d8999fe4-76af-40b3-b435-1d8977abc08c"
+	}
+}
