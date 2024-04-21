@@ -1,0 +1,92 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sales",
+				"fileSystem": "demo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "track_name",
+				"type": "String"
+			},
+			{
+				"name": "size_bytes",
+				"type": "String"
+			},
+			{
+				"name": "currency",
+				"type": "String"
+			},
+			{
+				"name": "price",
+				"type": "String"
+			},
+			{
+				"name": "rating_count_tot",
+				"type": "String"
+			},
+			{
+				"name": "rating_count_ver",
+				"type": "String"
+			},
+			{
+				"name": "user_rating",
+				"type": "String"
+			},
+			{
+				"name": "user_rating_ver",
+				"type": "String"
+			},
+			{
+				"name": "ver",
+				"type": "String"
+			},
+			{
+				"name": "cont_rating",
+				"type": "String"
+			},
+			{
+				"name": "prime_genre",
+				"type": "String"
+			},
+			{
+				"name": "sup_devices.num",
+				"type": "String"
+			},
+			{
+				"name": "ipadSc_urls.num",
+				"type": "String"
+			},
+			{
+				"name": "lang.num",
+				"type": "String"
+			},
+			{
+				"name": "vpp_lic",
+				"type": "String"
+			}
+		]
+	}
+}
