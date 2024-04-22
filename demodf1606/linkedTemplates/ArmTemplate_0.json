@@ -422,7 +422,7 @@
 													"type": "Expression"
 												},
 												"Status": {
-													"value": "'@{\"Status\"}'",
+													"value": "'@{pipeline().Pipeline}'",
 													"type": "Expression"
 												},
 												"RunId": {
@@ -479,7 +479,7 @@
 													"type": "Expression"
 												},
 												"Status": {
-													"value": "'@{\"Success\"}'",
+													"value": "'@{pipeline().Pipeline}'",
 													"type": "Expression"
 												},
 												"RunId": {
