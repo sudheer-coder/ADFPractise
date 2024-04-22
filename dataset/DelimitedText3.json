@@ -1,17 +1,25 @@
 {
-	"name": "DelimitedText1",
+	"name": "DelimitedText3",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "product.csv",
-				"folderPath": "salesoutput",
+				"fileName": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
+				"folderPath": "log",
 				"fileSystem": "demo"
 			},
 			"columnDelimiter": ",",
@@ -19,19 +27,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "product",
-				"type": "String"
-			},
-			{
-				"name": "itemname",
-				"type": "String"
-			},
-			{
-				"name": "quantity",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
